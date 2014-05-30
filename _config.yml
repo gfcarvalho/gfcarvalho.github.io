@@ -1,9 +1,11 @@
 # Site settings
 title: Gustavo Carvalho
 email: gfcarv@gmail.com
-description: "Bem vindo. Site em constru&ccedil;&atilde;o."
+description: "Site em constru&ccedil;&atilde;o."
 baseurl: ""
 url: "http://gustavocarvalho.eti.br"
+github: "gfcarvalho"
+twitter: "carvalhogustavo"
 
 # Build settings
 markdown: kramdown
