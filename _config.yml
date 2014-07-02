@@ -1,12 +1,206 @@
-# Site settings
-title: Gustavo Carvalho
-email: gfcarv@gmail.com
-description: "Site em constru&ccedil;&atilde;o."
-baseurl: ""
-url: "http://gustavocarvalho.eti.br"
-github: "gfcarvalho"
-twitter: "carvalhogustavo"
+title:            Gustavo Carvalho
+description:      "Desenvolvedor Web e Mobile"
+logo:             logo3.png
+disqus_shortname: gfcarvalho
+# Assign a default image for your site's header and footer
+default_bg:       default_bg.jpg
+search:           true
+share:            true
+# Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
+readtime:         true
+# Turn on or off the fin animations in the header and footer
+triangleheader:   false
+animated_fins:    false
+# Specify the fin color in RGB value
+fin_color:        "255,255,255"
+# Change url to your domain. Leave localhost server or blank when working locally.
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
+# whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
+url:             "http://localhost:4000"
+#url:              "http://gustavocarvalho.eti.br"
+baseurl:          ""
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+
+
+# Owner/author information
+owner:
+  name:           Gustavo Carvalho
+  avatar:         gfcarvalho.jpg
+  email:          gfcarv@gmail.com
+  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
+  description:    Gustavo Carvalho &eacute; Bacharel em Ci&ecirc;ncia da Computa&ccedil;&atilde;o pela Universidade Federal de Vi&ccedil;osa, especializado em tecnologias web, desenvolvimento front e back-end e Javascript Ninja.
+  # Social networking links used in footer. Update and remove as you like.
+  # To register at HMFAYSAL SOCIAL, visit http://social.hmfaysal.tk
+  twitter:        carvalhogustavo
+  facebook:       gustavo.faria.carvalho
+  github:         gfcarvalho
+  stackexchange:  http://stackexchange.com/users/2600197/gustavo-carvalho
+  linkedin:       http://br.linkedin.com/in/gustavofcarvalho/
+  instagram:      
+  flickr:         
+  tumblr:
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    https://plus.google.com/+GustavoCarvalhoBR
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+# Links to include in footer navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+    external: false
+    icon: home
+  - title: Artigos em destaque
+    url: /featured
+  - title: Categorias
+    url: /categories
+  - title: Tags
+    url: /tags
+  - title: + Sobre Gustavo
+    url: /about
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Sao_Paulo
+future:      true
+highlighter: pygments
+markdown:    kramdown
+paginate:    5
+paginate_path: "page:num"
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://gustavocarvalho.eti.br/'
+  relativeLinks: 'http://gustavocarvalho.eti.br/links.jsonp'
+  media: 'images'
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+      - name: "layout"
+        field:
+          element: "hidden"
+          label: "Layout"
+          value: "post"
+      - name: "type"
+        field:
+          element: "select"
+          label: "Select Post Type"
+          placeholder: "Choose your type"
+          options:
+            - name: "Standard"
+              value: 
+            - name: "Quote"
+              value: quote
+            - name: "Status"
+              value: status
+            - name: "Photo"
+              value: photo
+            - name: "Video"
+              value: video
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "An Awesome Headline!"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          placeholder: "Enter Post Description"
+      - name: "headline"
+        field:
+          element: "text"
+          label: "beadline"
+          placeholder: "Enter Post Headline"
+      - name: "modified"
+        field:
+          element: "text"
+          label: "Has this page been modified?"
+          placeholder: "YYYY-MM-DD"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add categories"
+          placeholder: "Choose categories"
+          value: pessoal
+          options:
+            - name: "Pessoal"
+              value: personal
+            - name: "Web-Development"
+              value: webdevelopment
+            - name: "Interessantes"
+              value: interesting
+            - name: "Status"
+              value: status
+            - name: "Cita&ccedil;&otilde;es"
+              value: quotes
+          alterable: true
+      - name: "tags"
+        field:
+          element: "text"
+          label: "Tags"
+          placeholder: "Enter tags, separated by spaces"
+      - name: "imagefeature"
+        field:
+          element: "text"
+          label: "Featured Image"
+          placeholder: "somefile.jpg"
+      - name: "imagecredit"
+        field:
+          element: "text"
+          label: "Image Credit"
+          placeholder: "some guy"
+      - name: "imagecreditlink"
+        field:
+          element: "text"
+          label: "Credit link for the image"
+          placeholder: "http://somewebsite.com"
+      - name: "video"
+        field:
+          element: "text"
+          label: "Insert Youtube Link"
+          placeholder: "http://youtube.com/somevideo"
+      - name: "mathjax"
+        field:
+          element: "checkbox"
+          label: "MathJax"
+          value: false
+      - name: "featured"
+        field:
+          element: "checkbox"
+          label: "Featured?"
+          value: false
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Comments"
+          value: false
+
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
