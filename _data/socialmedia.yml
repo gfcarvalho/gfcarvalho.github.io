@@ -3,9 +3,9 @@
   class: icon-linkedin
   title: "LinkedIn"
 
-- name: Google+
+- name: Google Plus
   url: https://plus.google.com/+gustavocarvalhobr
-  class: icon-googleplus
+  class: icon-cog
   title: "Google Plus"
 
 - name: Twitter

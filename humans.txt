@@ -6,7 +6,10 @@
 
 # TEAM
 
-
+Name: Gustavo Carvalho
+Role: Computer Scientist and Digital Marketer
+Site: http://gustavocarvalho.eti.br
+LinkedIn: http://br.linkedin.com/in/gustavofariacarvalho
 
 # THANKS
 
