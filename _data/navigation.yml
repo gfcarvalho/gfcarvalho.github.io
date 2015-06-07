@@ -1,8 +1,8 @@
-- title: Start
+- title: Inicio
   url: "/"
   side: left
 
-- title: Getting Started
+- title: Sobre Gustavo
   url: "/getting-started/"
   side: left
 
@@ -70,10 +70,10 @@
   - title: "Blog Archive"
     url: "/blog/archive/"
 
-- title: "Search"
+- title: "Pesquisar"
   url: "/search/"
   side: right
 
-- title: "Contact"
+- title: "Contato"
   url: "/contact/"
   side: right
