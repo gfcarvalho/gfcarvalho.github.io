@@ -1,100 +1,85 @@
-{% if page.imagefeature %}
-<footer id="footer"  class="blog-background overlay text-center align-middle animated from-top" style="background-image: url({{ site.url }}/images/{{ page.imagefeature }})" >
-{% else %}
-<footer id="footer"  class="blog-background overlay text-center align-middle animated from-top" style="background-image: url({{ site.url }}/images/{{ site.default_bg }})" >
-{% endif %}
+    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
 
-    <div class="inner">
-        <div class="container">
 
-            <ul class="social-icons">
-            {% if site.owner.twitter %}<li>
-                <a href="http://twitter.com/{{ site.owner.twitter }}" data-toggle="tooltip" title="{{ site.owner.name}} no Twitter" target="_blank">
-                    <i class="icon-twitter"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.facebook %}<li>
-                <a href="http://facebook.com/{{ site.owner.facebook }}" data-toggle="tooltip" title="{{ site.owner.name}} no Facebook" target="_blank">
-                    <i class="icon-facebook"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.google_plus %}<li>
-                <a href="{{ site.owner.google_plus }}" data-toggle="tooltip" title="{{ site.owner.name}} no Google+" target="_blank">
-                    <i class="icon-google-plus"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.stackexchange %}<li>
-                <a href="{{ site.owner.stackexchange }}" data-toggle="tooltip" title="{{ site.owner.name}} no StackExchange" target="_blank">
-                    <i class="icon-stackexchange"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.linkedin %}<li>
-                <a href="{{ site.owner.linkedin }}" data-toggle="tooltip" title="{{ site.owner.name}} no LinkedIn" target="_blank">
-                    <i class="icon-linkedin"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.instagram %}<li>
-                <a href="http://instagram.com/{{ site.owner.instagram }}" data-toggle="tooltip" title="{{ site.owner.name}} no Instagram" target="_blank">
-                    <i class="icon-instagram"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.flickr %}<li>
-                <a href="http://www.flickr.com/photos/{{ site.owner.flickr }}" data-toggle="tooltip" title="{{ site.owner.name}} on Flickr" target="_blank">
-                    <i class="icon-flickr"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.github %}<li>
-                <a href="http://github.com/{{ site.owner.github }}" data-toggle="tooltip" title="{{ site.owner.name}} no Github" target="_blank">
-                    <i class="icon-github"></i>
-                </a>
-            </li>{% endif %}
-        </ul>
-            <div>
-                &copy; Copyright {{ site.time | date: '%Y' }} &bull; <a href="{{ site.url }}/about/">{{ site.owner.name }}</a>
-            </div>
-            <ul class="menu-items">
-            {% for link in site.links %}
-            <li>
-                {% if link.external %}
-                    <a href="{{ link.url }}">{% if link.icon %}<i class="icon-{{ link.icon }}"></i>{% else %}{{ link.title }}{% endif %}</a>&nbsp;&bull;
-                {% else %}
-                    <a href="{{ site.url }}{{ link.url }}">{% if link.icon %}<i class="icon-{{ link.icon }}"></i>{% else %}{{ link.title }}{% endif %}</a>&nbsp;&bull;
-                {% endif %} 
-            </li>
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">{{ site.data.language.info_website }}</h5>
+
+            <p class="shadow-black">
+              {{ site.description }}
+              <a href="{{ site.url }}/info/">{{ site.data.language.more }}</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            {% for service_item in site.data.services %}
+              {% if forloop.first == true %}
+                <h5 class="shadow-black">{{ service_item.menu_name }}</h5>
+              {% endif %}
             {% endfor %}
-            <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
-        </ul>
-        </div>
-    </div>
-    {% if site.animated_fins and site.triangleheader %}
-        <div class="decor-wrapper">
-            <svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+              
+              <ul class="no-bullet shadow-black">
+              {% for service_item in site.data.services %}
+                {% if service_item.url contains 'http' %}
+                  {% assign domain = '' %}
+                  {% else %}
+                  {% assign domain = site.url %}
+                {% endif %}
+                  <li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
+                    <a href="{{ domain }}{{ service_item.url }}" {% if service_item.url contains 'http' %}target="_blank" {% endif %} title="{{ service_item.title }}">{{ service_item.name }}</a>
+                  </li>
+              {% endfor %}
+              </ul>
+          </div><!-- /.large-4.columns -->
 
-                <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba({{ site.fin_color }}, .1)"></path>
-                <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba({{ site.fin_color }}, .1)"></path>
 
-                <path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba({{ site.fin_color }}, .3)"></path>
-                <path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba({{ site.fin_color }}, .3)"></path>
+          <div class="small-6 medium-3 large-3 columns">
+            {% for network_item in site.data.network %}
+              {% if forloop.first == true %}
+                <h5 class="shadow-black">{{ network_item.menu_name }}</h5>
+              {% endif %}
+            {% endfor %}
+              
+            <ul class="no-bullet shadow-black">
+            {% for network_item in site.data.network %}
+              {% if network_item.url contains 'http' %}
+                {% assign domain = '' %}
+                {% else %}
+                {% assign domain = site.url %}
+              {% endif %}
+                <li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>
+                  <a href="{{ domain }}{{ network_item.url }}" {% if network_item.url contains 'http' %}target="_blank" {% endif %} title="{{ network_item.title }}">{{ network_item.name }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
 
-                <path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba({{ site.fin_color }}, .5)"></path>
-                <path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba({{ site.fin_color }}, .5)"></path>
+      </div><!-- /#footer -->
 
-                <path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
 
-                <path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="b30 small-12 medium-6 columns">
+            <ul class="inline-list">
+              <li>Created with &hearts; by <a style="display:inline;" href="http://phlow.de/">Phlow</a> with <a style="display:inline;" href="http://jekyllrb.com/" target="_blank">Jekyll</a> using <a style="display:inline;" href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a> </li>
+            </ul>
+          </section>
 
-            </svg>
-        </div>
-    {% else %}
-    {% if site.triangleheader %}
-        <div class="decor-wrapper">
-            <svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
-
-                <path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
-
-            </svg>
-        </div>
-    {% endif %}
-    {% endif %}
-</footer>
+          <section id="subfooter-right" class="small-12 medium-6 columns social-icons">
+            <ul class="inline-list">
+            {% for social_item in site.data.socialmedia %}
+              <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
+            {% endfor %}
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
