@@ -16,7 +16,7 @@ slogan: "Soluções em Tecnologia e Marketing Digital"
 
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: "»Gustavo Faria de Carvalho. Especialista em Marketing Digital, Tecnologias Web, Infraestrutura de Redes e Sistemas de Entretenimento Doméstico"
+description: "»Gustavo Carvalho - Especialista em Marketing Digital, Tecnologias Web, Infraestrutura de Redes e Sistemas de Entretenimento Doméstico"
 
 
 # This URL is the main adresse. Don't include a slash at the end.
@@ -87,7 +87,7 @@ defaults:
       show_meta: true 	# Show metadata beneath all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: "gfcarvalho"
+      author: "Gustavo Carvalho"
   -
     scope:
       path: ""        
@@ -96,7 +96,7 @@ defaults:
       show_meta: true   # Show metadata beneath all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: "gfcarvalho"
+      author: "Gustavo Carvalho"
 
 
 
@@ -119,8 +119,8 @@ defaults:
 #  /____/_____/\____/    Verify Website to Webmaster Tools
 
 google_author:             "https://plus.google.com/+gustavocarvalhobr"
-google_site_verification:  "Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ"
-bing_webmastertools_id:    "0FB4C028ABCF07C908C54386ABD2D97F"
+#google_site_verification:  "Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ"
+#bing_webmastertools_id:    "0FB4C028ABCF07C908C54386ABD2D97F"
 # alexa_verify_id:         ""
 
 
@@ -152,7 +152,7 @@ msapplication_tilecolor:                "#fabb00"
 #    / __/ / /_/ / /__/  __/ /_/ / /_/ / /_/ / ,<   
 #   /_/    \__,_/\___/\___/_.___/\____/\____/_/|_|      Facebook-Optimization › http://j.mp/fb_optimize
 
-og_image:                           "http://images.phlow.de/phlow/phlow_de-logo-512x.png"
+#og_image:                           "http://images.phlow.de/phlow/phlow_de-logo-512x.png"
 og_locale:                          "pt_BR"
 og_type:                            "website"
 og_title:                           "Gustavo Carvalho - Especialista em TI"

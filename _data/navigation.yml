@@ -2,7 +2,7 @@
   url: "/"
   side: left
 
-- title: Sobre Gustavo
+- title: Gustavo Carvalho
   url: "/getting-started/"
   side: left
   
@@ -67,7 +67,7 @@
   dropdown:
   - title: Blog
     url: "/blog/"
-  - title: "Arquivo do Blog"
+  - title: "Arquivo"
     url: "/blog/archive/"
 
 - title: "Pesquisar"
