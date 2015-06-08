@@ -7,7 +7,7 @@
 layout: frontpage
 title: "Gustavo Carvalho - Solu&ccedil;&otilde;es em Tecnologia e Marketing Digital"
 header:
-   image_fullwidth: "header_unsplash_12.jpg"
+   image_fullwidth: "header-cover.jpg"
 widget-1:
     title: "Marketing Digital"
     url: 'http://phlow.github.io/feeling-responsive/blog/'
