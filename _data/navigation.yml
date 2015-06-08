@@ -3,19 +3,19 @@
   side: left
 
 - title: Gustavo Carvalho
-  url: "/getting-started/"
+#  url: "/getting-started/"
   side: left
   
 - title: "Servi&ccedil;os"
-  url: "/design/"
+#  url: "/design/"
   side: left
   dropdown:
   - title: "Marketing Digital"
-    url: "/design/grid/"
+#    url: "/design/grid/"
   - title: "Programa&ccedil;&atilde;o para Web"
-    url: "/design/typography/"
+#    url: "/design/typography/"
   - title: "Solu&ccedil;&otilde;es em TI"
-    url: "/design/page/"
+#    url: "/design/page/"
 
 #- title: "Templates"
 #  url: "/design/"
@@ -66,14 +66,14 @@
   side: left
   dropdown:
   - title: Blog
-    url: "/blog/"
+#    url: "/blog/"
   - title: "Arquivo"
-    url: "/blog/archive/"
+#    url: "/blog/archive/"
 
 - title: "Pesquisar"
-  url: "/search/"
+#  url: "/search/"
   side: right
 
 - title: "Contato"
-  url: "/contact/"
+#  url: "/contact/"
   side: right
