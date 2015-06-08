@@ -1,7 +1,7 @@
 ---
 layout: page
 show_meta: false
-title: "Search"
+title: "Pesquisar na P&aacute;gina - Gustavo Carvalho"
 permalink: "/search/"
 ---
 
