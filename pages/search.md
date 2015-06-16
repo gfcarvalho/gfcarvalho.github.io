@@ -2,7 +2,7 @@
 layout: page
 show_meta: false
 title: "Pesquisar na P&aacute;gina - Gustavo Carvalho"
-permalink: "/search/"
+permalink: "/pesquisa/"
 ---
 
 {% include google_search.html %}

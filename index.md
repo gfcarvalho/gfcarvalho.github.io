@@ -10,7 +10,7 @@ header:
    image_fullwidth: "header-cover.jpg"
 widget-1:
     title: "Marketing Digital"
-    url: 'http://phlow.github.io/feeling-responsive/blog/'
+    url: '{{ site.url }}/blog'
     text: 'Planejamento Estrategico de Marketing Digital para a escolha dos melhores canais e definicao de estrategias de aquisicao de clientes. <em>Gustavo Carvalho</em> oferece servicos de marketing digital com foco em resultados.'
     image: unsplash_9-302x182.jpg
 widget-2:
@@ -26,9 +26,9 @@ widget-3:
 ---
 
 
-<div id="videoModal" class="reveal-modal large" data-reveal="">
+<!--<div id="videoModal" class="reveal-modal large" data-reveal="">
   <div class="flex-video widescreen vimeo" style="display: block;">
     <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
   </div>
   <a class="close-reveal-modal">&#215;</a>
-</div>
+</div>-->
