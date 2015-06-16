@@ -1,22 +1,17 @@
 - menu_name: "Servi&ccedil;os"
 
-- name: "Contato"
-  url: "/contact/"
-  class: "services-contact"
-  title: "Contato"
-  
 - name: "Marketing Digital"
-  url: "/contact/"
+  url: "/contato/"
   class: "services-contact"
   title: "Marketing Digital"
   
 - name: "Programa&ccedil;&atilde;o para Web"
-  url: "/contact/"
+  url: "/contato/"
   class: "services-contact"
   title: "Programa&ccedil;&atilde;o para Web"
   
 - name: "Solu&ccedil;&otilde;es em TI"
-  url: "/contact/"
+  url: "/contato/"
   class: "services-contact"
   title: "Solu&ccedil;&otilde;es em TI"
 
