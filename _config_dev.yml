@@ -7,3 +7,4 @@
 
 url: "http://localhost:4000"
 urlimg: "http://localhost:4000/images/"
+highlight: rouge
