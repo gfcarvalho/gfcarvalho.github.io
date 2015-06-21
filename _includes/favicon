@@ -1,6 +1,7 @@
 {% comment %}
 *   
 *   More Information › https://mathiasbynens.be/notes/touch-icons
+*   Generate Favicons › http://realfavicongenerator.net
 *   
 {% endcomment %}
 
@@ -8,6 +9,18 @@
 {% if site.favicon-32x32 %}
 	{% comment %} Regular Old-Skool Favicon: {% endcomment %}
 	<link rel="icon" sizes="32x32" href="{{ site.url }}/assets/img/{{ site.favicon-32x32 }}">
+{% endif %}
+
+
+{% if site.favicon-96x96 %}
+	{% comment %} Regular Old-Skool 96x96 Favicon: {% endcomment %}
+	<link rel="icon" sizes="96x96" href="{{ site.url }}/assets/img/{{ site.favicon-96x96 }}">
+{% endif %}
+
+
+{% if site.favicon-16x16 %}
+	{% comment %} Regular Old-Skool 16x16 Favicon: {% endcomment %}
+	<link rel="icon" sizes="16x16" href="{{ site.url }}/assets/img/{{ site.favicon-16x16 }}">
 {% endif %}
 
 
@@ -59,9 +72,15 @@
 {% endif %}
 
 
-{% if site.apple-touch-icon-precomposed %}
+{% if site.apple-touch-icon-60x60-precomposed %}
+	{% comment %} Unknown devices: {% endcomment %}
+	<link rel="apple-touch-icon-60x60-precomposed" sizes="60x60" href="{{ site.url }}/assets/img/{{ site.apple-touch-icon-60x60-precomposed }}">
+{% endif %}
+
+
+{% if site.apple-touch-icon-57x57-precomposed %}
 	{% comment %} For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: {% endcomment %}
-	<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/assets/img/{{ site.apple-touch-icon-precomposed }}">{% comment %} 57×57px {% endcomment %}	
+	<link rel="apple-touch-icon-57x57-precomposed" sizes="57x57" href="{{ site.url }}/assets/img/{{ site.apple-touch-icon-57x57-precomposed }}">
 {% endif %}
 
 
@@ -75,3 +94,13 @@
 	{% comment %} Background Color for Tile for Windows 8  {% endcomment %}
 	<meta name="msapplication-TileColor" content="{{ site.msapplication_tilecolor }}">
 {% endif %}
+
+
+{% if site.theme_color %}
+	{% comment %} Theme Color  {% endcomment %}
+	<meta name="theme-color" content="{{ site.theme_color }}">
+{% endif %}
+
+
+{% comment %} Icon Manifest  {% endcomment %}
+<link rel="manifest" href="/manifest.json">
