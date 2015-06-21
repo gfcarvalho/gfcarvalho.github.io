@@ -1,9 +1,9 @@
-- menu_name: "Ag&ecirc;ncia"
+- menu_name: "Ag&ecirc;ncia Digital"
 
-- name: "Zagaia Intelig&ecirc;ncia Digital"
-  url: "http://zagaiadigital.com.br/"
-  class: "network-entypo"
-  title: "Zagaia Intelig&ecirc;ncia Digital"
+#- name: "Zagaia Intelig&ecirc;ncia Digital"
+#  url: "http://zagaiadigital.com.br/"
+#  class: "network-entypo"
+#  title: "Zagaia Intelig&ecirc;ncia Digital"
 
 #- name: "Icons by Daniel Bruce"
 #  url: "http://entypo.com/"

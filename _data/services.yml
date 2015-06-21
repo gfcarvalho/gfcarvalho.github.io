@@ -3,17 +3,17 @@
 - name: "Marketing Digital"
   url: "/contato/"
   class: "services-contact"
-  title: "Marketing Digital"
+  title: "Planejamento Estra&eacute;gico, SEM, SEO, Social Media, Email Marketing, Web Analytics"
   
 - name: "Programa&ccedil;&atilde;o para Web"
   url: "/contato/"
   class: "services-contact"
-  title: "Programa&ccedil;&atilde;o para Web"
+  title: "Desenvolvimento de Web Sites e Web Apps: Front-end e Back-end"
   
-- name: "Solu&ccedil;&otilde;es em TI"
+- name: "Consultoria e Treinamento"
   url: "/contato/"
   class: "services-contact"
-  title: "Solu&ccedil;&otilde;es em TI"
+  title: "Consultoria e treinamentos em TI e Marketing Digital"
 
 #- name: "RSS"
 #  url: "/feed.xml"
