@@ -24,7 +24,8 @@ title: "Gustavo Carvalho - Solu&ccedil;&otilde;es em Tecnologia e Marketing Digi
  #- ... etc
 ---
 ## Página em Construção!
-Servi&ccedil;os:
+
+###Especialidades:
 
  - Planejamento Estrat&eacute;gico de **Marketing Digital** 
  - Desenvolvimento e Gestão de **Sistemas Web**
