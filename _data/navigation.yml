@@ -64,10 +64,10 @@
 - title: Blog
   url: "/blog/"
   side: left
-  dropdown:
-  - title: Blog
+#dropdown:
+#  - title: Blog
 #    url: "/blog/"
-  - title: "Arquivo"
+#  - title: "Arquivo"
 #    url: "/blog/archive/"
 
 - title: "Pesquisar"

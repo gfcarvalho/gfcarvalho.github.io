@@ -1,7 +1,7 @@
 ---
 layout: page
 show_meta: false
-title: "Sobre Gustavo Carvalho"
+title: "Gustavo Carvalho"
 subheadline: "Marketing Digital e Soluções em TI"
 breadcrumb: true
 header:
