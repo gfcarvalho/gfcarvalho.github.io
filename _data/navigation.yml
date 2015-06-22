@@ -62,7 +62,7 @@
 #    url: "/design/no-header-but-image/"
 
 - title: Blog
-  url: "/blog/"
+#  url: "/blog/"
   side: left
 #dropdown:
 #  - title: Blog
