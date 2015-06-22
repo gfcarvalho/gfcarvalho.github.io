@@ -3,10 +3,10 @@
   side: left
 
 - title: Gustavo Carvalho
-#  url: "/getting-started/"
+  url: "/gustavo-carvalho/"
   side: left
   
-- title: "Servi&ccedil;os"
+- title: "Especialidades"
 #  url: "/design/"
   side: left
   dropdown:
@@ -14,7 +14,7 @@
 #    url: "/design/grid/"
   - title: "Programa&ccedil;&atilde;o para Web"
 #    url: "/design/typography/"
-  - title: "Solu&ccedil;&otilde;es em TI"
+  - title: "Consultoria e Treinamento"
 #    url: "/design/page/"
 
 #- title: "Templates"
@@ -71,7 +71,7 @@
 #    url: "/blog/archive/"
 
 - title: "Pesquisar"
-#  url: "/search/"
+  url: "/pesquisa/"
   side: right
 
 - title: "Contato"

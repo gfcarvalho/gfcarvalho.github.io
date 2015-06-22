@@ -1,8 +1,8 @@
 ---
-title: "A website that doesn't exit"
+title: "Redirecionando..."
 layout: redirect
 sitemap: false
 permalink: /redirect-page/
-redirect_to:  "http://phlow.github.io/feeling-responsive/info/"
+redirect_to:  "http://gustavocarvalho.eti.br/"
 ---
-This is just a page to demonstrate the `redirect`-layout, programmend by [Kanishk](http://codingtips.kanishkkunal.in/about/).
+Redirecionando...

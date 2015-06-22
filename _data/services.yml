@@ -1,9 +1,9 @@
-- menu_name: "Servi&ccedil;os"
+- menu_name: "Especialidades"
 
 - name: "Marketing Digital"
   url: "/contato/"
   class: "services-contact"
-  title: "Planejamento Estra&eacute;gico, SEM, SEO, Social Media, Email Marketing, Web Analytics"
+  title: "Planejamento Estrat&eacute;gico, SEM, SEO, Social Media, Email Marketing, Web Analytics"
   
 - name: "Programa&ccedil;&atilde;o para Web"
   url: "/contato/"
