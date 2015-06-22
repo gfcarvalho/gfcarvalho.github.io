@@ -20,7 +20,7 @@ Desenvolve web sites e web applications no estado da arte, que geram resultado, 
  - Administração
  - Marketing & Marketing Digital
 
-##Áreas de atuação dentro do Marketing Digital
+##Áreas de atuação em Marketing Digital
  - Planejamento Estratégico de Marketing Digital
  - Marketing de Busca (SEM/SEO)
  - Gestão de Redes Sociais (SMM/SMO)
