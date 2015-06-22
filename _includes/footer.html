@@ -13,7 +13,7 @@
 
             <p class="shadow-black">
               {{ site.description }}
-              <a href="{{ site.url }}/contato/">{{ site.data.language.more }}</a>
+              <a href="{{ site.url }}/gustavo-carvalho/">{{ site.data.language.more }}</a>
             </p>
           </div><!-- /.large-6.columns -->
 
@@ -58,23 +58,22 @@
                   <a href="{{ domain }}{{ network_item.url }}" {% if network_item.url contains 'http' %}target="_blank" {% endif %} title="{{ network_item.title }}">{{ network_item.name }}</a>
                 </li>
             {% endfor %}
-              <li><a href="http://zagaiadigital.com.br" target="_blank"><img src="{{ site.urlimg }}logo_zagaia.jpg" width="120" title="Conhe&ccedil;a a ZAGAIA" alt="Conhe&ccedil;a a ZAGAIA"/></a></li>
+              <li><a href="http://zagaiadigital.com.br" target="_blank"><img src="{{ site.urlimg }}logo_zagaia.jpg" width="120" title="Conhe&ccedil;a a ZAGAIA" alt="ZAGAIA Intelig&ecirc;ncia Digital » Ag&ecirc;ncia de Marketing Digital"/></a></li>
             </ul>
           </div><!-- /.large-3.columns -->
         </div><!-- /.row -->
-
       </div><!-- /#footer -->
 
 
       <div id="subfooter">
         <nav class="row">
-          <section id="subfooter-left" class="b30 small-12 medium-6 columns">
+          <section id="subfooter-left" class="b30 small-12 medium-8 columns">
             <ul class="inline-list">
                 <li>&copy; 2015 &nbsp;Gustavo Faria de Carvalho </li>
             </ul>
           </section>
 
-          <section id="subfooter-right" class="small-12 medium-6 columns social-icons">
+          <section id="subfooter-right" class="small-12 medium-4 columns social-icons">
             <ul class="inline-list">
             {% for social_item in site.data.socialmedia %}
               <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
